@@ -18,13 +18,13 @@ The app is designed to be responsive, functioning well on various devices, from 
 <h3>- HTML Structure</h3>
 The HTML structure centers around a `<div>` container that holds the time display and the control buttons. This structure provides a clean and organized layout, making it easy to extend or modify the app if needed.
 <h3>- CSS Styling</h3>
-The CSS file defines the visual style of the app:
+The CSS file defines the visual style of the app
   <h4>Background and Fonts</h4>
 The app uses a custom Google font, "Courier Prime", giving it a classic, typewriter-style appearance. The background features a dark, gradient overlay on top of a subtle image, creating a professional and polished look.
   <h4>Layout and Alignment</h4>
 The stopwatch is centered on the page, both vertically and horizontally, ensuring that it is the focal point. The buttons are evenly spaced and aligned for a balanced and user-friendly interface.
 <h3>- JavaScript Functionality</h3>
-The app’s interactivity is managed by JavaScript:
+The app’s interactivity is managed by JavaScript
   <h4>- stopWatch()</h4>
 This function increments the time every second, updating the display in real-time. It handles the logic for rolling over seconds to minutes and minutes to hours.
   <h4>- watchStart()</h4>
