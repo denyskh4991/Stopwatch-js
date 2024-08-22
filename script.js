@@ -1,5 +1,6 @@
 let [seconds, minutes, hours] = [0, 0, 0];
 let displayTime = document.getElementById("displayTime");
+let timer = null;
 
 function stopWatch() {
     seconds++;
@@ -11,4 +12,11 @@ function stopWatch() {
             hours++;
         }
     }
+}
+
+function watchStart() {
+    if (timer !== null) {
+        clearInterval(timer);
+    }
+    timer = setInterval(stopWatch, 1000);
 }
