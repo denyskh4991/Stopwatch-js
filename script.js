@@ -16,7 +16,7 @@ function stopWatch() {
     let m = minutes < 10 ? "0" + minutes : minutes;
     let s = seconds < 10 ? "0" + seconds : seconds;
 
-    displayTime.innerHTML = h +":"+ m +":"+ s;
+    displayTime.innerHTML = h + ":" + m + ":" + s;
 }
 
 function watchStart() {
@@ -24,4 +24,14 @@ function watchStart() {
         clearInterval(timer);
     }
     timer = setInterval(stopWatch, 1000);
+}
+
+function watchStop() {
+    clearInterval(timer);
+}
+
+function watchReset() {
+    clearInterval(timer);
+    [seconds, minutes, hours] = [0, 0, 0];
+    displayTime.innerHTML = "00:00:00";
 }
